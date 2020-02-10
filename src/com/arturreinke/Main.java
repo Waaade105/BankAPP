@@ -12,17 +12,11 @@ public class Main {
         bank.addBranch(new Branch("Konopnickiej"));
         bank.addBranch(new Branch("Mickiewicza"));
         bank.printBranchesList();
-        bank.closeBranch(bank.queryBranch("Konopnickiej"));    // OBCZAJ
-
-
+        bank.closeBranch(bank.queryBranch("Konopnickiej"));    // check
 
         Customer igor = new Customer("Igor", 1000, "7899");
         bank.depositCustomerMoneyInBank("Igor", 500);
-
         igor.getMoney();
-
-
-
 
         boolean quit = false;
         System.out.println("Hi. Where would you like to create your new bank account?\n " +
@@ -98,11 +92,10 @@ public class Main {
 //                            giveCLientCredit();
                     }
                     break;
-
             }
-
         }
     }
+    
     public static void printOperationsBank(){
         System.out.println("\nAvailable operations:\npress");
         System.out.println("0 - to print operations\n"+
@@ -142,7 +135,6 @@ public class Main {
                 System.out.println("O.K. Maybe next time.");
                 break;
         }
-
     }
 
     public static void findClientInBank (){
@@ -209,7 +201,6 @@ public class Main {
     }
 
     //Branch
-
     private static void printOperationsBranch(){
         System.out.println("\nAvailable operations:\npress");
         System.out.println("0 - to print operations\n"+
@@ -239,8 +230,4 @@ public class Main {
     private static void findClientInBranch(){
 
     }
-
-
-
-
 }
