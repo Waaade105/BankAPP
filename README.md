@@ -7,7 +7,8 @@ The Customer class have an arraylist of Doubles (transactions).
 Customer: Name, and the ArrayList of doubles.
 Branch is able to:
 - add a new customer and initial transaction amount,
-- add additional transactions for that customer/branch
+- add additional transactions for that customer/branch.
+
 Bank can:
 - add a new branch
 - add a customer to that branch with initial transaction
